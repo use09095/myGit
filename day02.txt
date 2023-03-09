@@ -111,3 +111,17 @@ git으로 버전관리하기
         commit 하여 stage에 올라간 상태를 영구저장
 
         push 하여 commit된 상태를 github에 업로드하기
+
+    git push 원격저장소별칭 브랜치이름
+        해당 원격 저장소 해당 브랜치에 local 저장소 commit 상태를 업로드하기
+    
+    -u 옵션(upstream으로 만드는 옵션)
+        git push -u 원격저장소별칭 브랜치이름
+            현재 내가 작업하고 있는 로컬 저장소의 로컬 브랜치가 해당 원격 저장소 브랜치와 연결이 된다. 따라서 이 이후로는
+            git push
+            만 입력하더라도 알아서 연결된 원격 저장소 브랜치에 업로드가 된다.
+            브랜치: 폴더라고 생각하기
+        
+        git add *
+        git commit -am '커밋 메세지'
+        git push
